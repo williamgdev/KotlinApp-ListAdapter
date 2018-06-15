@@ -14,8 +14,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         mainViewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
         mainViewModel.itemList.observe(this, android.arch.lifecycle.Observer { items ->
-            items?.let { Log.d("logMain", it.joinToString { it }) }
+            items?.let { showText(it.joinToString { it }) }
         })
         mainViewModel.getFirstStudents()
+
+        printPairVals()
     }
+
+    private fun printPairVals() {
+        val (foo, one) = UtilsFunctionalPrograming.someFunction()
+        showText(foo)
+        showText(one.toString())
+    }
+
+    private fun showText(text: String) =
+            Log.d("logMain", text)
 }

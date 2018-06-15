@@ -16,9 +16,9 @@ class MainViewModel: ViewModel() {
             add(Students("Student 5", 7, true))
         }
 
-        val filterList = UtilsFuntionalPrograming.filterList(students, 4, 3)
+        val filterList = UtilsFunctionalPrograming.filterList(students, 4, 3)
 
-        itemList.value = UtilsFuntionalPrograming.listToString(filterList)
+        itemList.value = UtilsFunctionalPrograming.listToString(filterList)
     }
 
 
