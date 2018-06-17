@@ -1,4 +1,6 @@
-package com.github.willgutierrez.example
+package com.github.willgutierrez.example.funtionalprograming
+
+import com.github.willgutierrez.example.Students
 
 object UtilsFunctionalPrograming {
     fun filterList(students: MutableList<Students>, ageFilter: Int, size: Int): List<Students> {

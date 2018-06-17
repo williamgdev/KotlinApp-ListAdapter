@@ -4,6 +4,8 @@ import android.arch.lifecycle.ViewModelProviders
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.github.willgutierrez.example.funtionalprograming.Game
+import com.github.willgutierrez.example.funtionalprograming.UtilsFunctionalPrograming
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +21,9 @@ class MainActivity : AppCompatActivity() {
         mainViewModel.getFirstStudents()
 
         printPairVals()
+
+        Game().simulate()
+
     }
 
     private fun printPairVals() {

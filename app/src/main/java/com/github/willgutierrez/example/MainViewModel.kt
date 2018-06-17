@@ -2,6 +2,7 @@ package com.github.willgutierrez.example
 
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
+import com.github.willgutierrez.example.funtionalprograming.UtilsFunctionalPrograming
 
 class MainViewModel: ViewModel() {
     var itemList = MutableLiveData<List<String>>()
