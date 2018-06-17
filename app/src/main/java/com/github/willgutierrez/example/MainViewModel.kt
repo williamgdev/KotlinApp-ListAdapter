@@ -8,13 +8,13 @@ class MainViewModel: ViewModel() {
 
     fun getFirstStudents () {
 
-        val students = mutableListOf<Students>().apply {
-            add(Students("Student 1", 4, true))
-            add(Students("Student 2", 4))
-            add(Students("Student 3", 4))
-            add(Students("Student 4", 4))
-            add(Students("Student 5", 7, true))
-        }
+        val students = mutableListOf(
+            Students("Student 1", 4, true),
+            Students("Student 2", 4),
+            Students("Student 3", 4),
+            Students("Student 4", 4),
+            Students("Student 5", 7, true)
+        )
 
         val filterList = UtilsFunctionalPrograming.filterList(students, 4, 3)
 
