@@ -1,7 +1,7 @@
 package com.github.willgutierrez.example
 
-import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 
 class MainViewModel: ViewModel() {
     var itemList = MutableLiveData<List<String>>()

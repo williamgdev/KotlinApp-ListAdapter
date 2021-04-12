@@ -1,7 +1,7 @@
 package com.github.willgutierrez.example
 
-import android.arch.lifecycle.ViewModelProviders
-import android.support.v7.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProviders
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 
@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         mainViewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
-        mainViewModel.itemList.observe(this, android.arch.lifecycle.Observer { items ->
+        mainViewModel.itemList.observe(this, androidx.lifecycle.Observer { items ->
             items?.let { showText(it.joinToString { it }) }
         })
         mainViewModel.getFirstStudents()
