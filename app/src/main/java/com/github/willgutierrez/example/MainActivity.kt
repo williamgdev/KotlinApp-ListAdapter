@@ -19,12 +19,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setupRecyclerView()
         mainViewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
-        mainViewModel.itemList.observe(this, { items ->
+        mainViewModel.itemList.observe(this) { items ->
             items?.let { result ->
                 showText(result.joinToString { it })
                 adapter.submitList(result.toItemList())
             }
-        })
+        }
         mainViewModel.getFirstStudents()
 
         printPairVals()

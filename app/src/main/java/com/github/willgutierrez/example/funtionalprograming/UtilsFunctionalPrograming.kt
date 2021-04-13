@@ -16,5 +16,4 @@ object UtilsFunctionalPrograming {
     fun someFunction1(): Pair<String, Int> = "foo" to 1
     fun someFunction2(): Map<String, Int> = mapOf("foo" to 1, "foo2" to 2)
     fun someFunction3(): Triple<String, Int, Int> = Triple("foo", 1, 1)
-
 }
